@@ -1,0 +1,27 @@
+<h2>Enter a new Project</h2>
+<form>
+  <div class="form-group">
+    <label for="title">Enter A Project Name</label>
+    <input class="form-control" #name id="title" placeholder="e.g, kevin's book authoring business">
+  </div>
+  <div class="form-group">
+    <label for="description">Enter A Description</label>
+    <textarea class="form-control" #description id="description" placeholder="solving the world's need for boring literature!"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="starters">Enter The Starters</label>
+    <input type="text" class="form-control" #starters id="starters" placeholder="Bob, Tom, Frank">
+  </div>
+  <div class="form-group">
+    <label for="fundsNeeded">Enter Amount Needed</label>
+    <input type="number" class="form-control" #fundsNeeded id="fundsNeeded" placeholder="e.g, $1,000,000">
+  </div>
+  <div class="form-group">
+    <label for="reward">Will there be a reward for backers?</label>
+    <select class="form-control" #rewards>
+      <option value=true>Yes</option>
+      <option value=false>No</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="submitProject(name.value, description.value, starters.value, fundsNeeded.value, rewards.value); name.value='';description.value='';starters.value='';fundsNeeded.value='';rewards.value='';">Submit</button>
+</form>

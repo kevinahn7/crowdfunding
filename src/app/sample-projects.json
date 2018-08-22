@@ -1,0 +1,15 @@
+{ "projects": [{
+  "name": "Kevin's Book Authoring Gig",
+  "description": "Would like to start a business to author boring novels",
+  "starters": ["Kevin Ahn", "Thadicus Maximus"],
+  "fundsNeeded": 10,
+  "rewards": true
+  },
+  {
+    "name": "Matt's Burritoville",
+    "description": "The finest burrito's you have ever seen",
+    "starters": ["Matt Burrito Slayer Smith"],
+    "fundsNeeded": 5000,
+    "rewards": false
+  }]
+}

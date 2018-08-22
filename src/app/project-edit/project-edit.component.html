@@ -1,0 +1,25 @@
+<h1>Edit Project</h1>
+  <div>
+    <label for="title">Project Name</label>
+    <input [(ngModel)]="selectedProject.name" class="form-control" name="title" id="title" placeholder="e.g, kevin's book authoring business">
+  </div>
+  <div>
+    <label for="description">Description</label>
+    <textarea [(ngModel)]="selectedProject.description" class="form-control" name="description"  id="description" placeholder="solving the world's need for boring literature!"></textarea>
+  </div>
+  <div>
+    <label for="starters">The Starters</label>
+    <input [(ngModel)]="selectedProject.starters" type="text" class="form-control" name="starters" id="starters" placeholder="Bob, Tom, Frank">
+  </div>
+  <div>
+    <label for="fundsNeeded"> Amount Needed</label>
+    <input [(ngModel)]="selectedProject.fundsNeeded" type="number" class="form-control"  name="fundsNeeded" id="fundsNeeded" placeholder="e.g, $1,000,000">
+  </div>
+  <div>
+    <label for="reward">Will there be a reward?</label>
+    <select class="form-control" [(ngModel)]="selectedProject.rewards"  name="reward"  id="reward">
+      <option value=true>Yes</option>
+      <option value=false>No</option>
+    </select>
+  </div>
+  <button (click)="beginUpdatingProject(selectedProject)">Submit</button>

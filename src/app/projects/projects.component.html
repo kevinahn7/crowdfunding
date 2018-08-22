@@ -1,0 +1,14 @@
+<h2>Projects</h2>
+
+<div *ngFor="let project of projects | async" class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)="goToProjectDetail(project)"><em>{{project.name}}</em></h3>
+    <hr>
+    <h4>Starters:</h4>
+    <div *ngFor="let starter of project.starters">
+      <h4>{{ starter }}</h4>
+    </div>
+  </div>
+  <br />
+  <br />
+</div>
